@@ -42,8 +42,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center items-center md:p-8 bg-gradient-to-br from-cyan-600 to-emerald-700 rounded-lg md:rounded-2xl">
+      <div className="w-full flex flex-col justify-center items-center md:p-8 bg-gradient-to-br from-cyan-600 to-emerald-700 rounded-lg md:rounded-2xl">
         <h1 className="text-3xl md:text-5xl font-bold font-serif text-center p-6">EXPERIENCIA Y EDUCACIÓN</h1>
+        <div className="flex flex-row gap-5 w-full justify-between items-stretch">
+          <div className="flex flex-col w-full gap-1 p-2 border border-b-2 border-t-0 border-r-0">
+            <h2 className="font-serif font-semibold text-2xl">Laboral</h2>
+          </div>
+          <div className="flex flex-col w-full gap-1 p-2 border border-b-2 border-t-0 border-r-0">
+            <h2 className="font-serif font-semibold text-2xl">Académica</h2>
+          </div>
+        </div>
       </div>
     </main>
       );
