@@ -60,8 +60,8 @@ export default async function Home() {
         <h1 className="text-3xl md:text-5xl font-bold font-serif text-center p-6 border border-gray-400">BLOG</h1>
         <ul>
           {
-            response.data.map(post => (
-              <div className="my-1 mx-2">
+            response.data.map((post, key) => (
+              <div key={key} className="my-1 mx-2">
                 <li className="text-xl md:text-3xl font-bold font-serif text-center p-2">{ post.attributes.Title} </li>
                 <li className="text-justify text-lg font-serif md:w-1/2 md:mx-auto h-auto my-4">{ post.attributes.Body }</li>
               </div>
